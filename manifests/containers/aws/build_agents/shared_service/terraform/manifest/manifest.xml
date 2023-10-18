@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    This manifest defines the behavior of container components
+-->
+<manifest>
+  <project name="caf-components-container" path="components/container" remote="launch-dso-platform">
+  </project>
+  <project name="caf-component-aws-pipelines" path="components/module" remote="launch-dso-platform">
+    <!-- Common -->
+    <linkfile src="linkfiles/pipeline_providers/aws/aws_pipeline-to-aws_cloud/codebuild/common/scripts/spec_scripts/actions/codebuild/simulated-merge.sh" dest="components/build-actions/simulated-merge" />
+    <linkfile src="linkfiles/pipeline_providers/aws/aws_pipeline-to-aws_cloud/codebuild/common/scripts/spec_scripts/actions/codebuild/terragrunt-deploy.sh" dest="components/build-actions/terragrunt-deploy" />
+    <linkfile src="linkfiles/pipeline_providers/aws/aws_pipeline-to-aws_cloud/codebuild/common/scripts/spec_scripts/actions/codebuild/terragrunt-plan.sh" dest="components/build-actions/terragrunt-plan" />
+    <linkfile src="linkfiles/pipeline_providers/aws/aws_pipeline-to-aws_cloud/codebuild/common/scripts/spec_scripts/actions/codebuild/tf-post-deploy-functional-test.sh" dest="components/build-actions/tf-post-deploy-functional-test" />
+    <linkfile src="linkfiles/pipeline_providers/aws/aws_pipeline-to-aws_cloud/codebuild/common/scripts/spec_scripts/actions/codebuild/tf-pre-deploy-functional-test.sh" dest="components/build-actions/tf-pre-deploy-functional-test" />
+    <linkfile src="linkfiles/pipeline_providers/aws/aws_pipeline-to-aws_cloud/codebuild/common/scripts/spec_scripts/actions/codebuild/trigger-pipeline.sh" dest="components/build-actions/trigger-pipeline" />
+    <linkfile src="linkfiles/pipeline_providers/aws/aws_pipeline-to-aws_cloud/codebuild/common/scripts/spec_scripts/actions/codebuild/codebuild-status.sh" dest="components/build-actions/codebuild-status" />
+    <!-- Docker -->
+    <linkfile src="linkfiles/pipeline_providers/aws/aws_pipeline-to-aws_cloud/codebuild/docker/scripts/spec_scripts/actions/codebuild/build-container.sh" dest="components/build-actions/build-container" />
+    <linkfile src="linkfiles/pipeline_providers/aws/aws_pipeline-to-aws_cloud/codebuild/docker/scripts/spec_scripts/actions/codebuild/conftest-docker.sh" dest="components/build-actions/conftest-docker" />
+    <linkfile src="linkfiles/pipeline_providers/aws/aws_pipeline-to-aws_cloud/codebuild/common/scripts/spec_scripts/actions/codebuild/increment-semver.sh" dest="components/build-actions/increment-semver" />
+    <!-- IaC -->
+    <linkfile src="linkfiles/pipeline_providers/aws/aws_pipeline-to-aws_cloud/codebuild/iac/terraform-framework/scripts/spec_scripts/actions/codebuild/conftest-terraform-module.sh" dest="components/build-actions/conftest-terraform-module" />
+    <linkfile src="linkfiles/pipeline_providers/aws/aws_pipeline-to-aws_cloud/codebuild/iac/terraform-framework/scripts/spec_scripts/actions/codebuild/lint-terraform-module.sh" dest="components/build-actions/lint-terraform-module" />
+    <linkfile src="linkfiles/pipeline_providers/aws/aws_pipeline-to-aws_cloud/codebuild/iac/terraform-framework/scripts/spec_scripts/actions/codebuild/make-check-module.sh" dest="components/build-actions/make-check-module" />
+    <!-- Java -->
+    <linkfile src="linkfiles/pipeline_providers/aws/aws_pipeline-to-aws_cloud/codebuild/java/mvn/scripts/spec_scripts/actions/codebuild/maven-build.sh" dest="components/build-actions/maven-build" />
+    <linkfile src="linkfiles/pipeline_providers/aws/aws_pipeline-to-aws_cloud/codebuild/java/mvn/scripts/spec_scripts/actions/codebuild/maven-test.sh" dest="components/build-actions/maven-test" />
+    <!-- Python -->
+    <linkfile src="linkfiles/pipeline_providers/aws/aws_pipeline-to-aws_cloud/codebuild/python/scripts/spec_scripts/actions/codebuild/python-integration-tests.sh" dest="components/build-actions/python-integration-tests" />
+    <linkfile src="linkfiles/pipeline_providers/aws/aws_pipeline-to-aws_cloud/codebuild/python/scripts/spec_scripts/actions/codebuild/python-unit-tests.sh" dest="components/build-actions/python-unit-tests" />
+    <!-- Service-Platforms -->
+    <linkfile src="linkfiles/pipeline_providers/aws/aws_pipeline-to-aws_cloud/codebuild/service-platforms/ecs-platform/scripts/spec_scripts/actions/codebuild/auto-qa.sh" dest="components/build-actions/auto-qa" />
+    <linkfile src="linkfiles/pipeline_providers/aws/aws_pipeline-to-aws_cloud/codebuild/service-platforms/ecs-platform/scripts/spec_scripts/actions/codebuild/certify-image.sh" dest="components/build-actions/certify-image" />
+    <linkfile src="linkfiles/pipeline_providers/aws/aws_pipeline-to-aws_cloud/codebuild/service-platforms/ecs-platform/scripts/spec_scripts/actions/codebuild/deploy-ecr-image.sh" dest="components/build-actions/deploy-ecr-image" />
+    <linkfile src="linkfiles/pipeline_providers/aws/aws_pipeline-to-aws_cloud/codebuild/service-platforms/ecs-platform/scripts/spec_scripts/actions/codebuild/integration-test.sh" dest="components/build-actions/integration-test" />
+    <linkfile src="linkfiles/pipeline_providers/aws/aws_pipeline-to-aws_cloud/codebuild/service-platforms/ecs-platform/scripts/spec_scripts/actions/codebuild/publish-ecr-image.sh" dest="components/build-actions/publish-ecr-image" />
+  </project>
+  <project name="git-webhook-lambda" path="components/git-webhook-lambda" remote="launch-dso-platform">
+
+  </project>
+</manifest>

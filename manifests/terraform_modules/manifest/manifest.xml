@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    This manifest defines the behavior of terraform_module components, a dependency of
+    all TF modules
+-->
+<manifest>
+  <project name="caf-components-tf-module" path="components/module" remote="launch-dso-platform">
+    <linkfile src="linkfiles/Makefile" dest="components/Makefile" />
+
+    <!-- <linkfile src="artifacts/terraform_modules/Makefile" dest="components/terraform_modules/Makefile" /> -->
+    <linkfile src="linkfiles/.tflint.hcl" dest=".tflint.hcl" />
+    <linkfile src="linkfiles/.pre-commit-config.yaml" dest=".pre-commit-config.yaml" />
+    <linkfile src="linkfiles/.golangci.yaml" dest=".golangci.yaml" />
+  </project>
+</manifest>
