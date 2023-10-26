@@ -27,7 +27,7 @@ Manifests are found in [`manifests/*/seed/manifest.xml`](./manifests/*/seed/mani
 An example using [`manifests/terraform_modules/seed/manifest.xml`](./manifests/terraform_modules/seed/manifest.xml) would be initialized using these entries in a Makefile:
 
 ```
-REPO_MANIFESTS_URL ?= https://github.com/nexient-llc/common-automation-framework.git
+REPO_MANIFESTS_URL ?= https://github.com/saathvika8/common-automation-framework-test.git
 REPO_BRANCH ?= main
 REPO_MANIFEST ?= manifests/terraform_modules/seed/manifest.xml
 
