@@ -3,7 +3,7 @@
     This manifest defines the behavior of container components
 -->
 <manifest>
-  <project name="caf-components-container" path="components/container" remote="launch-dso-platform" revision="refs/tags/0.1.0" so_override_attribute_revision='${CONTAINER_VER}'>
+  <project name="caf-components-container" path="components/container" remote="launch-dso-platform" revision="refs/tags/0.1.0" dso_override_attribute_revision='${CONTAINER_VER}'>
   </project>
   <project name="caf-component-aws-pipelines" path="components/module" remote="launch-dso-platform" revision="refs/tags/0.1.0">
     <!-- Common -->
